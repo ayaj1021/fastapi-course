@@ -5,8 +5,7 @@ from .config import settings
 
 # Database url format
 # SQLALCHEMY_DATABASE_URL = 'postgresql://<username>:<password>@<ip-address/hostname>/<database_name>'
-#SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}"
-SQLALCHEMY_DATABASE_URL = "postgresql://postgressql_fastapi_course_user:uMluego05GoOdXV8QINu0RFLI2sIAOx4@dpg-d3o85ter433s739scfeg-a.oregon-postgres.render.com/postgressql_fastapi_course"
+SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
