@@ -2,5 +2,6 @@ _pycache_
 venv/
 .env
 .packages.py
+.test_db.py
 
 amber-lucky-stillness
