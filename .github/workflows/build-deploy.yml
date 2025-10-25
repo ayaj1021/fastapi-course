@@ -15,5 +15,11 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
-      - name: say hi to ayaj
-        run: echo "hello ayaj"
+      - name: Install python version 3.13
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13t'
+      - name: update pip
+        run: python -m pip install --upgrade pip
+      - name: install all dependencies
+        run: pip install -r requirements.txt
