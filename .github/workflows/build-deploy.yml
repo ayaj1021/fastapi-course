@@ -18,7 +18,7 @@ jobs:
       - name: Install python version 3.13
         uses: actions/setup-python@v6
         with:
-          python-version: '3.13t'
+          python-version: '3.13'
       - name: update pip
         run: python -m pip install --upgrade pip
       - name: install all dependencies
